@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>세번째 문제</title>
+    </head>
+    <style>
+        .button{
+            background-color:rgba(243, 111, 111, 0.452);
+            border:rgba(231, 60, 60, 0.452);
+            border-radius: 12px;
+            color:white;
+            padding:10px 16px;
+            text-align:center;
+            text-decoration:none;
+            display:inline-black;
+            font-size:16px;
+            margin:4px 2px;
+            cursor:pointer;
+        }
+        .button:hover{
+            background-color: rgba(231, 60, 60, 0.452);
+            color: white;
+        }
+        body {
+            background-image: url('image/door.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;  
+            background-size: 100% 100%;
+        }
+        
+    </style>
+    <body bgcolor=black>
+    <script language=javascript>
+        function t(){
+            alert("정답입니다!")
+            window.location.href='fourth_q.1.html';
+        }
+        function f(){
+            alert("틀렸습니다!")
+            window.location.href='fourth_q.1.html';
+        }
+    </script>
+        <center>
+            <br><br><br><br><br><br><br>
+            <p><font size=5 color=white>당신은 복도에서 탈출해 1층 로비에 있습니다<br>하지만 밖으로 나가는 문이 잠겨있습니다!<br>
+                지금 당장 문제를 맞추고 계단을 탈출하세요!</font><p>
+                <font size=5 color=yellow>Q1.미림과학고의 입학전형은 6개이다!<p></font>
+                <input type=button class=button onclick=t() value="yes">&nbsp;&nbsp;&nbsp;
+                <input type=button class=button onclick=f() value="no">
+        </center>
+    </body>
+</html>

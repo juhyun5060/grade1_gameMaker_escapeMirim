@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>게임시작-첫번째 문제</title>
+    </head>
+    <style>
+        .button{
+            background-color:rgba(243, 111, 111, 0.452);
+            border:rgba(231, 60, 60, 0.452);
+            border-radius: 12px;
+            color:white;
+            padding:10px 16px;
+            text-align:center;
+            text-decoration:none;
+            display:inline-black;
+            font-size:16px;
+            margin:4px 2px;
+            cursor:pointer;
+        }
+        .button:hover{
+            background-color: rgba(231, 60, 60, 0.452);
+            color: white;
+        }
+        body {
+            background-image: url('image/1-7.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;  
+            background-size: 100% 100%;
+        }
+        
+    </style>
+    <body>
+    <script language=javascript>
+        count=0;
+        function t(){
+            alert("정답입니다!")
+            window.location.href='second_q.html';
+        }
+        function f(){
+            alert("틀렸습니다!")
+            window.location.href='second_q.1.html';
+        }
+    </script>
+        <center>
+            <form name=quiz>
+            <br><br><br><br><br><br><br><br>
+            <font size=5 color=white>당신은 1-7 교실에 갇혀있습니다!<br>
+                지금 당장 문제를 맞추고 교실을 탈출하세요!</font><p><p><br>
+               <font size=5 color=yellow>Q1.미림과학고의 설립일자는?</font> <p>
+                <input type=button class=button onclick="f()" value="5월 9일">&nbsp;&nbsp;&nbsp;
+                <input type=button class=button onclick="t()" value="3월 1일">
+            </form>
+        </center>
+    </body>
+</html>
